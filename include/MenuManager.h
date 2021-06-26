@@ -31,6 +31,8 @@ public:
   inline void scroll(int dir) { _mVisibleItem->scroll(dir); }
 
   inline void sweep(int dir) { _mVisibleItem->sweep(dir); }
+
+  inline void update() { _mVisibleItem->update(_mDispaly); }
 };
 
 #endif // _ARDUMENU_MANAGER_

@@ -17,13 +17,15 @@ public:
   MenuComponent(const char *name) : _mName(name) {}
   ~MenuComponent() {}
 
-  inline const char *getName() const { return _mName; }
+  const char *getName() const { return _mName; }
 
   virtual void select() = 0;
 
   virtual void add(MenuComponent *item) = 0;
 
   virtual void print(MenuDisplay *display) = 0;
+
+  virtual void update(MenuDisplay *display) = 0;
 
   virtual void scroll(int dir = SCROLL_BOTTOM) = 0;
 
