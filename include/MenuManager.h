@@ -22,6 +22,8 @@ public:
     _mVisibleItem = start;
   }
 
+  inline MenuComponent* getVisible() { return _mVisibleItem; }
+
   inline void setVisible(MenuComponent *item) { _mVisibleItem = item; }
 
   inline void select() { _mVisibleItem->select(); }
